@@ -19,27 +19,27 @@ This projects takes a look at:
 --- 
 
 # Services deployed
-- Microsoft Azure
-- Key Vaults ![](Key-Vaults.png)
+<!--- Microsoft Azure -->
+<!-- Key Vaults --> 
+![](Key-Vaults.png)
 
 --- 
 
 # Azure Key Vaults in summary
 - What is Azure Key Vault?   
-Azure Key Vault is a cloud service for securely storing and accessing secrets. It is a centralized cloud service for storing application secrets such as encryption keys, certificates, and server-side tokens. Key Vault helps you control your applications' secrets by keeping them in a single central location and providing secure access, permissions control, and access logging.
+Azure Key Vault is a cloud service for securely storing and accessing secrets. It is a centralized cloud service for storing application secrets such as encryption keys, certificates, and server-side tokens. 
 
 - What are secrets?   
-A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic keys. 
-Secrets are small (less than 10K) data blobs protected by a HSM-generated key created with the Key Vault. Secrets exist to simplify the process of persisting sensitive settings that almost every application has: storage account keys, .PFX files, SQL connection strings, data encryption keys, etc.
+A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates (.PFX files), or cryptographic keys. 
 
 - What is an HSM?   
-HSM is one of several key management solutions in Azure.   
-Azure Key Vault Managed HSM (Hardware Security Module) is a fully managed, highly available, single-tenant, standards-compliant cloud service that enables you to safeguard cryptographic keys for your cloud applications, using FIPS 140-2 Level 3 validated HSMs.   
+HSM is one of several key management solutions in Azure.Azure Key Vault Managed HSM (Hardware Security Module) is a fully managed, highly available, single-tenant, standards-compliant cloud service that enables you to safeguard cryptographic keys for your cloud applications, using FIPS 140-2 Level 3 validated HSMs.   
 
 - Below are some benefits of deploying/utilizing Azure Key Vaults   
-Secrets Management - Azure Key Vault can be used to Securely store and tightly control access to tokens, passwords, certificates, API keys, and other secrets   
-Key Management: Azure Key Vault can be used as a Key Management solution. Azure Key Vault makes it easy to create and control the encryption keys used to encrypt your data.   
-Certificate Management: Azure Key Vault lets you easily provision, manage, and deploy public and private Transport Layer Security/Secure Sockets Layer (TLS/SSL) certificates for use with Azure and your internal connected resources.
+⚡ Key Vault helps you control your applications' secrets by keeping them in a single central location and providing secure access, permissions control, and access logging.   
+⚡ Helps securely store and tightly control access to tokens, passwords, certificates, API keys, and other secrets.   
+⚡ Useful as a Key Management solution which allows for easy creation and control of encryption keys used to encrypt your data.   
+⚡ Allows easy provision and management of public and private Transport Layer Security/Secure Sockets Layer (TLS/SSL) certificates for use with Azure and your internal connected resources.   
 Other benefits include:   
 ⚡ Centralizing storage of application secrets in Azure Key Vault allows you to control their distribution.   
 ⚡ Access to a key vault requires proper authentication and authorization before a caller (user or application) can get access.   
@@ -51,7 +51,18 @@ Other benefits include:
 # Steps 
 Creating a vault in the Azure portal requires no initial configuration.   
 Your signed-in user identity is automatically granted the full set of secret management permissions, and you can start adding secrets immediately.   
-Once you have a vault, adding and managing secrets can be done from any Azure administrative interface, including the Azure portal, the Azure CLI, and Azure PowerShell.
+Once you have a vault, adding and managing secrets can be done from any Azure administrative interface, including the Azure portal, the Azure CLI, and Azure PowerShell.   
+
+- Create a new Azure Key Vault   
+![](kv1.png)   
+
+- Add a secret   
+![](kv2.png)   
+
+- Show the secret   
+![](kv3.png)   
+
+- Other ways to consume the secret
 
 ---
 
