@@ -21,7 +21,7 @@ This projects takes a look at:
 # Services deployed
 <!--- Microsoft Azure -->
 <!-- Key Vaults --> 
-![](Key-Vaults.png)
+![Key-Vaults](https://github.com/Ladcze/configure-and-manage-secrets/assets/97769275/80ed484b-7a46-4f4a-9b13-fcb120f7f903)
 
 --- 
 
@@ -54,25 +54,27 @@ Your signed-in user identity is automatically granted the full set of secret man
 Once you have a vault, adding and managing secrets can be done from any Azure administrative interface, including the Azure portal, the Azure CLI, and Azure PowerShell.   
 
 - Create a new Azure Key Vault   
-![](kv1a.png)   
+<!-- ![](.png files/kv1a.png)   -->
+![kv1a](https://github.com/Ladcze/configure-and-manage-secrets/assets/97769275/932c3148-68e3-4918-a512-91b9be2ed840)
 
 - Add a secret   
-![](kv2.png)   
+![kv2](https://github.com/Ladcze/configure-and-manage-secrets/assets/97769275/242fb088-e591-41ca-bdd2-b6b40f1e88fa)   
+<!--![](kv2.png)   -->
 
 - Show the secret   
-![](kv3.png)   
+![kv3](https://github.com/Ladcze/configure-and-manage-secrets/assets/97769275/f3ef34d3-a7d7-43f1-b491-a499ffaed9dc)   
 
 - Sample certificate   
-![](kv6.png) 
+![kv6](https://github.com/Ladcze/configure-and-manage-secrets/assets/97769275/48547578-82f3-4933-8f2d-2bd33307b7ef)   
 
 # Other ways to consume the secret   
 You can create and retrieve secrets from the Azure Key Vault as long as you're authenticated with Azure AD using the REST API, native SDKs, Azure CLI, or Azure PowerShell.   
 For example, this can be done using Azure PowerShell:   
 - "Get-AzKeyVault" which returns the following
-![](kv4.png)   
+![kv4](https://github.com/Ladcze/configure-and-manage-secrets/assets/97769275/c007eec1-fc3f-4276-ba8f-6eeacd63e5c6)   
 
 - Get-AzKeyVaultSecret -VaultName 'VaultamortDiary' -Name 'HiddenLocation'
-![](kv5.png)   
+![kv5](https://github.com/Ladcze/configure-and-manage-secrets/assets/97769275/e4996e0e-5fc6-463a-8091-9f6d222db3fc)   
 
 ---
 
